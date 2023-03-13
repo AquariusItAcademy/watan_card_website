@@ -1,0 +1,567 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+/* Vars */
+:root {
+  --bg: #1b8ea1;
+  --light-color: #f0f0f0;
+  --dark-color: #333333;
+  --light-text-color: #ffffff;
+  --dark-text-color: #696969;
+  --color1: #377794;
+  --color2: #bab2d1;
+  --color3: #303f6a;
+  --color4: #786a54;
+  --color5: #9e6937;
+  --color6: #FFB434;
+}
+
+/* General */
+* {
+  margin: 0;
+  padding: 0; 
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  /* padding: 20px 0; */
+  background-color: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app {
+    background-color: var(--light-color);
+    box-shadow: 0 0 50px var(--dark-color);
+    width: 100%;
+    min-height: 750px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.active {
+  display: block !important;
+}
+/* Start starter  */
+.starter
+{
+background-image: url(../img/Asset\ 2.png);
+width: 100%;
+height: 100%;
+background-size: cover;
+}
+
+
+.starter .img-logo
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.starter .img-logo img
+{
+    width: 75%;
+}
+
+.starter .para p 
+{
+color: #f0f0f0;
+font-size: 50px;
+letter-spacing: 3px;
+}
+.starter .button
+{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 10px;
+}
+.app .button .sign-in,
+.app .button .create-account
+{
+  padding: 10px 0px;
+  margin-top: 10px; 
+  width: 250px;
+  font-size: 33px;
+  border-radius: 25px;
+  border: 1px solid #333333;
+  color: #303f6a;
+}
+.starter .button .sign-in
+{
+  margin-top: 10px;
+  color: #f0f0f0;
+  background-image: linear-gradient(to right,#377794 30% , #303f6a 100%);
+}
+.starter .infor
+{
+    margin-top: 30px;
+    text-align: center;
+}
+.starter .infor span
+{
+display: block;
+cursor: pointer;
+font-size: 18px;
+color: #696969;
+}
+@media(max-width:400px)
+{
+.starter .para p 
+{
+    font-size: 45px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+.app .button 
+{
+    margin-top: 40px;
+}
+.app .button .sign-in,
+.app .button .create-account
+{
+padding: 5px 0px;
+}
+}
+/* End starter  */
+
+/* Start new-account */
+
+.app .new-account
+{
+  background-image: url(../img/Asset\ 2.png);
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.app .new-account p
+{
+  text-align: center;
+  color: #f0f0f0;
+  font-size: 35px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.app .new-account p i 
+{
+  top: 17px;
+}
+.app .new-account .form
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-area: 5px;
+}
+.app .new-account .form .btn-wid
+{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.app .new-account .form .btn
+{
+  direction: rtl;
+  width: 90%;
+  padding: 10px 8px;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: 0 0 5px;
+}
+.app .new-account .form .btn::placeholder
+{
+  font-size: 16px;
+  font-weight: bold;
+}
+.app .new-account .form .d-name
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  width: 90%;
+} 
+.app .new-account .form .name,
+.app .new-account .form .Occupation
+{
+  padding: 10px 8px;
+  border-radius: 10px;
+  margin: 2px;
+  direction: rtl;
+  width: 100%;
+}
+.app .new-account .form .name::placeholder,
+.app .new-account .form .Occupation::placeholder
+{
+  font-size: 14px;
+  font-weight: bold;
+}
+.app .new-account .form .chek
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 25px;
+  color: #696969;
+}
+.app .new-account .form .button
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 60px;
+}
+.app .new-account .form span
+{
+  font-size: 17px;
+  color: #696969;
+  cursor: pointer;
+}
+@media(max-width:400px)
+{
+.app .new-account .form .button
+  {
+margin-top: 30px; 
+  }
+}
+/* End new-account  */
+
+/* Start sign-in  */
+.app .sign-in 
+{
+  background-image: url(../img/Asset\ 2.png);
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.app .sign-in  p
+{
+  text-align: center;
+  color: #f0f0f0;
+  font-size: 35px;
+  margin: 15px 0 0;
+  position: relative;
+}
+.app .back
+{
+position: absolute;
+right: 5px;
+font-size: 22px;
+top: 15px;
+}
+.app .sign-in .form
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-area: 5px;
+  transform: translateY(25%);
+}
+.app .sign-in .form .btn-wid
+{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.app .sign-in .form .btn
+{
+  direction: rtl;
+  width: 90%;
+  padding: 10px 8px;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: 0 0 5px;
+}
+.app .sign-in .form .btn::placeholder
+{
+  font-size: 16px;
+  font-weight: bold;
+}
+.app .sign-in .form .chek
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 25px;
+  color: #bab2d1;
+}
+.app .sign-in .form .button
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 60px;
+}
+.app .sign-in .form span
+{
+  font-size: 17px;
+  color: #bab2d1;
+  cursor: pointer;
+}
+@media(max-width:400px)
+{
+.app .sign-in .form .button
+  {
+margin-top: 30px; 
+  }
+}
+/* End sign-in  */
+
+/* Start Services  */
+
+.services
+{
+  height: 100%;
+  width: 100%;
+  background-color: var(--color3);
+}
+.services .services-page
+{
+  padding: 15px;
+}
+.services .services-page .head-ser
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--light-text-color);
+  font-size: 23px;
+  padding: 0 5px;
+}
+.services .services-page .head-ser h2
+{
+  font-weight: 100;
+  margin-left: 30px;
+}
+.services .services-page .head-ser .icone img
+{
+  margin-right: 5px;
+  width: 35px;
+  height: 23px;
+}
+.services .services-page .form-ser .ads
+{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px;
+background-color: var(--light-color);
+border-radius: 15px;
+}
+.services .services-page .form-ser .ads .ad-1
+{
+  margin-right: 5px;
+}
+.services .services-page .form-ser .ads .ad-1,
+.services .services-page .form-ser .ads .ad-2
+{
+  padding: 10px 10px;
+  background-image: linear-gradient(to right,#377794 30% , #303f6a 100%);
+  color: var(--light-text-color);
+  width: 40%;
+  height: 75px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 25px;
+  position: relative;
+}
+.services .services-page .form-ser .ads .ad-1::before,
+.services .services-page .form-ser .ads .ad-2::after
+{
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 25px;
+  color: var(--color6);
+  font-size: 30px;
+}
+.services .services-page .form-ser .ads .ad-1::before
+{
+  content: "\f0a8";
+  left: -32px;
+}
+.services .services-page .form-ser .ads .ad-2::after
+{
+  content: "\f0a9";
+  right: -32px;
+}
+.services .services-page .form-ser .balance
+{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  background-color: var(--light-color);
+  margin-top: 20px;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 15px;
+}
+.services .services-page .form-ser .balance i 
+{
+  color: var(--color6);
+}
+.services .services-page .form-ser .balance p
+{
+  font-size: 20px;
+  color: var(--color3);
+}
+.services .services-page .form-ser .balance p span
+{
+  color: var(--color6);
+  font-weight: 900;
+}
+.services .services-page .services-form .article
+{
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill , minmax(75px , 1fr));*/
+  grid-template-columns: repeat(3, minmax(70px , 1fr)); 
+  gap: 10px;
+  min-height: 425px;
+  background-color: var(--light-color);
+  margin-top: 20px;
+  padding: 30px;
+  border-radius: 15px;
+}
+@media(max-width: 350px )
+{
+  .services .services-page .services-form .article
+{
+  padding: 5px; }
+}
+.services .services-page .services-form .article .Square
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services .services-page .services-form .article .st
+{
+  padding: 10px;
+  background-image: linear-gradient(to right,#377794 30% , #303f6a 100%);
+  border-radius: 10px;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+}
+.services .services-page .services-form .article img
+{
+  max-width: 90%;
+}
+.services .services-page .services-form .article .discounts img
+{
+  max-width: 75%;
+}
+.services .services-page .services-form .article .title 
+{
+  color: var(--color3);
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+.services .services-page .services-form nav
+{
+  padding: 5px;
+  background-color: var(--light-color);
+  margin-top: -11px;
+  border-radius: 0px 0px 15px 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.services .services-page .services-form nav span
+{
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--color3);
+}
+.activespan
+{
+  background-color: var(--color6) !important;
+}
+.services .services-page .services-form nav span
+{
+  background-color: var(--dark-color);
+}
+.services .services-page .services-form nav span:hover
+{
+  background-color: var(--color6);
+}
+ /* End Services  */
+
+ /* Start Options */
+
+section.options,
+section.settings {
+background-color: var(--color3);
+padding: 15px;
+}
+.option-header,
+.settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--light-text-color);
+  font-size: 20px;
+}
+.option .option-ul, 
+.settings .settings-ul{
+  background-color: var(--light-color);
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 15px;
+}
+.option .option-ul li,
+.settings .settings-ul li {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+  
+}
+.option .option-ul li:not(:last-child),
+.settings .settings-ul li:not(:last-child){
+  border-bottom: 3px solid var(--color3);
+}
+.option .option-ul li img,
+.settings .settings-ul li img  {
+  width: 63px;
+  height: 60px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  background-color: var(--color6);
+  border-radius: 15px;
+  padding: 7px;
+}
+.option .option-ul li p,
+.settings .settings-ul li p {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--color1);
+}
+ /* End Options */

@@ -1,0 +1,28 @@
+// vars :
+$bg: var(--bg);
+$lc: var(--light-color);
+$dc: var(--dark-color);
+$ltc: var(--light-text-color);
+$dtc: var(--dark-text-color);
+$c1: var(--color1);
+$c2: var(--color2);
+$c3: var(--color3);
+$c4: var(--color4);
+$c5: var(--color5);
+// end vars .
+// Mixins :
+@mixin container($w: 100%, $h: inherit, $p: 0, $m: 0 auto) {
+  width: $w;
+  height: $h;
+  padding: $p;
+  margin: $m;
+}
+@mixin flex($j: center, $a: center, $fd: inherit, $fw: wrap, $g: inherit) {
+  display: flex;
+  justify-content: $j;
+  align-items: $a;
+  flex-direction: $fd;
+  flex-wrap: $fw;
+  gap: $g;
+}
+// end Mixins .
