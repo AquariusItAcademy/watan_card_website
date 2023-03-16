@@ -91,6 +91,12 @@ barcode[0].addEventListener("click", () => {
   Pages[3].classList.remove("active");
   Pages[6].classList.add("active");
 });
+square.forEach((el) => {
+  el.addEventListener("click", () => {
+    Pages[3].classList.remove("active");
+    Pages[7].classList.add("active");
+  });
+});
 // square[0].addEventListener("click", () => {
 //   Pages[3].classList.remove("active");
 //   Pages[7].classList.add("active");
@@ -147,9 +153,3 @@ barcode[0].addEventListener("click", () => {
 //   Pages[3].classList.remove("active");
 //   Pages[7].classList.add("active");
 // });
-square.forEach((el) => {
-  el.addEventListener("click", () => {
-    Pages[3].classList.remove("active");
-    Pages[7].classList.add("active");
-  });
-});
