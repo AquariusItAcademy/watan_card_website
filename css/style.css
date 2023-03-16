@@ -512,7 +512,7 @@ border-radius: 15px;
 }
  /* End Services  */
 
- /* Start Options */
+ /* Start Options settings */
 
 section.options,
 section.settings {
@@ -556,6 +556,7 @@ padding: 15px;
   background-color: var(--color6);
   border-radius: 15px;
   padding: 7px;
+  object-fit: contain;
 }
 .option .option-ul li p,
 .settings .settings-ul li p {
@@ -564,4 +565,143 @@ padding: 15px;
   margin-bottom: 15px;
   color: var(--color1);
 }
- /* End Options */
+ /* End Options settings */
+
+/* Start Pay   */
+section.pay {
+  padding: 15px;
+  background-color: var(--color3);
+}
+.header-pay {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  color: var(--light-text-color);
+}
+.header-pay .back {
+  position: relative;
+  top: 0;
+  }
+.header-pay p {
+  font-size: 21px;
+  }
+.header-pay img {
+  width: 10%;
+  height: 10%;
+}
+.parcode-img {
+  width: 50%;
+  background-color: var(--light-color);
+  padding: 10px;
+  margin: 30px auto;
+  text-align: center;
+  border-radius: 15px;
+}
+.parcode-img img {
+  width: 100%;
+}
+@media(min-width:700px) 
+{
+  .header-pay img {
+    width: 5%;
+  }
+  .parcode-img {
+    width: 20%;
+  }
+  .parcode-img img {
+    max-width: 100%;
+  }
+}
+.Payment-amount {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 200px;
+  border-radius: 15px;
+  background-image: linear-gradient(to right,#377794 30% , #303f6a 100%);
+  box-shadow: 0 0 50px;
+}
+.Payment-amount p {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  color: var(--light-text-color);
+}
+.Payment-amount .currency {
+  border: 1px solid var(--light-color);
+  padding: 5px;
+}
+.Payment-amount .currency select {
+  background: transparent;
+  color: var(--light-color);
+  font-weight: bold;
+  font-size: 14px;
+}
+.Payment-amount .currency select option {
+  color: black;
+}
+.Payment-amount .currency label {
+  color: var(--color6);
+  font-weight: bold;
+  margin-left: 15px;
+  font-size: 20px;
+}
+.Payment-amount  button {
+  padding: 5px 20px;
+  font-size: 18px;
+  background-color: var(--color6);
+  color: var(--light-text-color);
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.watan-card {
+  
+  background-color: var(--color3);
+}
+.watan-card .watan-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--light-text-color);
+  padding: 15px;
+}
+.watan-card .watan-head .back {
+  position: relative;
+  top: 0;
+}
+.watan-card .watan-head h3 {
+  flex: 1;
+  text-align: center;
+}
+.watan-card .date p {
+background-color: var(--color6);
+text-align: right;
+padding: 10px;
+color: var(--light-text-color);
+}
+.watan-card ul {
+  background-color: var(--light-color);
+  padding: 5px 15px;
+}
+.watan-card ul li 
+{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px;
+margin-bottom: 10px;
+border-radius: 10px;
+background-color: #3777947a;
+}
+.watan-card ul li i 
+{
+  font-size: 30px;
+  margin-right: 10px;
+  color: #fd2424;
+}
+.watan-card ul li  p {
+  font-size: 12px;
+}
+/* End Pay   */
