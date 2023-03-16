@@ -38,7 +38,7 @@ body {
   align-items: center;
 }
 .app {
-    background-color: var(--light-color);
+    background-color: var(--light-text-color);
     box-shadow: 0 0 50px var(--dark-color);
     width: 100%;
     min-height: 750px;

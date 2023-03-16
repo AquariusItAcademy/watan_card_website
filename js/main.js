@@ -1,4 +1,5 @@
-var Pages = document.querySelectorAll(".page"),
+var App = document.querySelector("#App"),
+  Pages = document.querySelectorAll(".page"),
   starterbtn = document.querySelectorAll(".starterbtn"),
   sp = document.querySelectorAll(".sp"),
   square = document.querySelectorAll(".Square");
@@ -6,7 +7,7 @@ bar = document.querySelectorAll(".bar");
 set = document.querySelectorAll(".set");
 back = document.querySelectorAll(".back");
 barcode = document.querySelectorAll(".barcode");
-console.log(starterbtn);
+console.log(App);
 Pages.forEach((el) => {
   el.style.display = "none";
   Pages[0].classList.add("active");
@@ -22,10 +23,12 @@ starterbtn[1].addEventListener("click", () => {
 starterbtn[2].addEventListener("click", () => {
   Pages[1].classList.remove("active");
   Pages[3].classList.add("active");
+  App.style.backgroundColor = "var(--color3)";
 });
 starterbtn[3].addEventListener("click", () => {
   Pages[2].classList.remove("active");
   Pages[3].classList.add("active");
+  App.style.backgroundColor = "var(--color3)";
 });
 square.forEach((sq) => {
   if (sq.classList.contains("s-2")) {
