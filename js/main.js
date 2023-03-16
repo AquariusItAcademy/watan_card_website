@@ -3,11 +3,11 @@ var App = document.querySelector("#App"),
   starterbtn = document.querySelectorAll(".starterbtn"),
   sp = document.querySelectorAll(".sp"),
   square = document.querySelectorAll(".Square");
-bar = document.querySelectorAll(".bar");
-set = document.querySelectorAll(".set");
+bar = document.querySelector(".bar");
+set = document.querySelector(".set");
 back = document.querySelectorAll(".back");
-barcode = document.querySelectorAll(".barcode");
-console.log(App);
+barcode = document.querySelector(".barcode");
+App.style.backgroundColor = "#ffffff";
 Pages.forEach((el) => {
   el.style.display = "none";
   Pages[0].classList.add("active");
@@ -86,71 +86,15 @@ back[5].addEventListener("click", () => {
   Pages[7].classList.remove("active");
   Pages[3].classList.add("active");
 });
-bar[0].addEventListener("click", () => {
+bar.addEventListener("click", () => {
   Pages[3].classList.remove("active");
   Pages[4].classList.add("active");
 });
-set[0].addEventListener("click", () => {
+set.addEventListener("click", () => {
   Pages[3].classList.remove("active");
   Pages[5].classList.add("active");
 });
-barcode[0].addEventListener("click", () => {
+barcode.addEventListener("click", () => {
   Pages[3].classList.remove("active");
   Pages[6].classList.add("active");
 });
-// square[0].addEventListener("click", () => {
-//   Pages[3].classList.remove("active");
-//   Pages[7].classList.add("active");
-// });
-// square[1].addEventListener("click", () => {
-//   Pages[3].classList.remove("active");
-//   Pages[7].classList.add("active");
-// });
-// square[2].addEventListener("click", () => {
-//   Pages[3].classList.remove("active");
-//   Pages[7].classList.add("active");
-// });
-// square[3].addEventListener("click", () => {
-//   Pages[3].classList.remove("active");
-//   Pages[7].classList.add("active");
-// });
-// square[4].addEventListener("click", () => {
-//   Pages[3].classList.remove("active");
-//   Pages[7].classList.add("active");
-// });
-// square[5].addEventListener("click", () => {
-//   Pages[3].classList.remove("active");
-//   Pages[7].classList.add("active");
-// });
-// square[6].addEventListener("click", () => {
-//   Pages[3].classList.remove("active");
-//   Pages[7].classList.add("active");
-// });
-// square[7].addEventListener("click", () => {
-//   Pages[3].classList.remove("active");
-//   Pages[7].classList.add("active");
-// });
-// square[8].addEventListener("click", () => {
-//   Pages[3].classList.remove("active");
-//   Pages[7].classList.add("active");
-// });
-// square[9].addEventListener("click", () => {
-//   Pages[3].classList.remove("active");
-//   Pages[7].classList.add("active");
-// });
-// square[10].addEventListener("click", () => {
-//   Pages[3].classList.remove("active");
-//   Pages[7].classList.add("active");
-// });
-// square[11].addEventListener("click", () => {
-//   Pages[3].classList.remove("active");
-//   Pages[7].classList.add("active");
-// });
-// square[12].addEventListener("click", () => {
-//   Pages[3].classList.remove("active");
-//   Pages[7].classList.add("active");
-// });
-// square[13].addEventListener("click", () => {
-//   Pages[3].classList.remove("active");
-//   Pages[7].classList.add("active");
-// });
