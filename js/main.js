@@ -35,6 +35,10 @@ square.forEach((sq) => {
     sq.style.display = "none";
   }
   sp[0].classList.add("activespan");
+  sq.addEventListener("click", () => {
+    Pages[3].classList.remove("active");
+    Pages[7].classList.add("active");
+  });
 });
 sp[0].addEventListener("click", () => {
   square.forEach((sq) => {
@@ -93,12 +97,6 @@ set[0].addEventListener("click", () => {
 barcode[0].addEventListener("click", () => {
   Pages[3].classList.remove("active");
   Pages[6].classList.add("active");
-});
-square.forEach((el) => {
-  el.addEventListener("click", () => {
-    Pages[3].classList.remove("active");
-    Pages[7].classList.add("active");
-  });
 });
 // square[0].addEventListener("click", () => {
 //   Pages[3].classList.remove("active");
