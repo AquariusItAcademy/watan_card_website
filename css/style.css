@@ -624,7 +624,7 @@ section.pay {
 }
 .Payment-amount p {
   font-size: 18px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.9px;
   color: var(--light-text-color);
 }
 .Payment-amount .currency {
@@ -656,6 +656,9 @@ section.pay {
   border-radius: 10px;
   cursor: pointer;
 }
+/* End Pay  */
+
+/* Start Watan-card  */
 .watan-card {
   
   background-color: var(--color3);
@@ -704,4 +707,4 @@ background-color: #3777947a;
 .watan-card ul li  p {
   font-size: 12px;
 }
-/* End Pay   */
+/* End Watan-card  */
